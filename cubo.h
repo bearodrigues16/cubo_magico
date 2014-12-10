@@ -44,4 +44,5 @@ void executarOperacoes(Cubo ** cubes, char * arquivo);
 
 int contarLinhas(char * arquivo);
 
+
 #endif

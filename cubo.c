@@ -103,9 +103,12 @@ void transposta(char ** matriz) {
 
 void girarLinhaEsquerda(Cubo * cube, int linha) { //mudei
 
+	
+
 	if(DEBUG) {
 		printf("Linha %d esquerda\n", linha);
 	}
+	linha=2-linha;
 
 	char ** auxiliar = (char **) malloc(sizeof(char *)*3);
 	int i,j;
@@ -149,9 +152,12 @@ void girarLinhaEsquerda(Cubo * cube, int linha) { //mudei
 
 void girarLinhaDireita(Cubo * cube, int linha) { //mudei
 
+	
 	if(DEBUG) {
 		printf("Linha %d direita\n", linha);
 	}
+	linha=2-linha;
+
 
 	char ** auxiliar = (char **) malloc(sizeof(char *)*3);
 	int i,j;
