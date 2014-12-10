@@ -368,121 +368,103 @@ void branco5(Cubo * cube){
 			girarLinhaEsquerda(cube,0);
 			girarFaceEsquerda(cube);
 
-
 			
 		}else if(eDaCor(cube->faces[1][1],"br")){
-			girarFaceDireita(cube);
-			girarLinhaDireita(cube,2);  //aqui
-			girarFaceEsquerda(cube);
-
 			
-		}else if(eDaCor(cube->faces[1][5],"br")){
-			girarColunaCima(cube,0);
 			girarFaceDireita(cube);
-			girarLinhaDireita(cute,2);
+			girarColunaCima(cube,0);
+			girarColunaCima(cube,0);
+			girarLinhaDireita(cube,0);
 			girarFaceEsquerda(cube);
 			
 		}else if(eDaCor(cube->faces[1][7],"br")){
-			girarColunaCima(cube,0);
-			girarColunaCima(cube,0);
 			girarFaceDireita(cube);
-			girarLinhaDireita(cube,2);
+			girarLinhaDireita(cube,0);
 			girarFaceEsquerda(cube);
 			
 		}else if(eDaCor(cube->faces[2][1],"br")){
+			girarLinhaEsquerda(cube,2);
+			girarColunaCima(cube,2);
+			girarColunaCima(cube,2);
 			girarLinhaDireita(cube,2);
-			girarColunaBaixo(cube,0);
-			girarLinhaEsquerda(cube,2);
-			girarColunaCima(cube,0);
 			girarFaceDireita(cube);
-			girarLinhaEsquerda(cube,2);
+			girarLinhaEsquerda(cube,0);
 			girarFaceEsquerda(cube);
 
-	}else if(eDaCor(cube->faces[2][3],"br")){
-			girarLinhaEsquerda(cube,2);
+		}else if(eDaCor(cube->faces[2][3],"br")){
+
 			girarColunaBaixo(cube,2);
-			girarLinhaDireita(cube,2);
-			girarLinhaDireita(cube,2);
-			girarColunaBaixo(cube,0);
-			girarLinhaEsquerda(cube,2);
+			girarColunaBaixo(cube,2);
 
 	}else if(eDaCor(cube->faces[2][5],"br")){
 			
-			girarColunaBaixo(cube,0);
-			girarColunaBaixo(cube,0);
-
-	}else if(eDaCor(cube->faces[2][7],"br")){
-		
-			girarLinhaDireita(cube,0);
-			girarColunaBaixo(cube,0);
+			girarFaceEsquerda(cube);
+			girarFaceEsquerda(cube);
 			girarColunaBaixo(cube,0);
 			girarFaceDireita(cube);
-			girarLinhaDireita(cube,2);
-			girarFaceEsquerda(cube);			
+			girarFaceDireita(cube);
+
+			
+	}else if(eDaCor(cube->faces[2][7],"br")){
+		
+			girarFaceDireita(cube);
+			girarLinhaEsquerda(cube,0);
+			girarLinhaEsquerda(cube,0);
+			girarFaceEsquerda(cube);
 
 	}else if(eDaCor(cube->faces[3][1],"br")){
 		
 		girarColunaCima(cube,2);
 		girarColunaCima(cube,2);
-		girarLinhaDireita(cube,0);
-		girarLinhaDireita(cube,0);
-		girarColunaBaixo(cube,0);
-		girarColunaBaixo(cube,0);
 		girarFaceDireita(cube);
-		girarLinhaDireita(cube,2);
+		girarLinhaEsquerda(cube,0);
 		girarFaceEsquerda(cube);
 
 	}else if(eDaCor(cube->faces[3][3],"br")){
 		
-		girarColunaCima(cube,2);
-		girarLinhaDireita(cube,0);
-		girarLinhaDireita(cube,0);
-		girarColunaBaixo(cube,0);
-		girarColunaBaixo(cube,0);
+		girarColunaBaixo(cube,2);
 		girarFaceDireita(cube);
-		girarLinhaDireita(cube,2);
+		girarLinhaEsquerda(cube,0);
 		girarFaceEsquerda(cube);
 
 	}else if(eDaCor(cube->faces[3][5],"br")){
 		
-		girarColunaBaixo(cube,2);
-		girarLinhaDireita(cubo,0);
-		girarLinhaDireita(cubo,0);
-		girarColunaCima(cube,2);
-		girarColunaCima(cube,2);
 		girarFaceDireita(cube);
-		girarLinhaDireita(cube,2);
-		girarFaceEsquerda(cube);
+		girarFaceDireita(cube);
+		girarColunaBaixo(cube,0);
+		girarColunaBaixo(cube,0);
+		girarFaceDireita(cube);
+		girarFaceDireita(cube);
+
 
 	}else if(eDaCor(cube->faces[3][7],"br")){
 		
-		girarLinhaDireita(cube,0);
-		girarLinhaDireita(cube,0);
-		girarColunaCima(cube,0);
-		girarColunaCima(cube,0);
 		girarFaceDireita(cube);
-		girarLinhaDireita(cube,2);
+		girarLinhaEsquerda(cube,0);
+		girarLinhaEsquerda(cube,0);
 		girarFaceEsquerda(cube);
 
 	}else if(eDaCor(cube->faces[5][1],"br")){
 		
-		girarLinhaEsquerda(cube,0);
-		girarColunaCima(cube,0);
+		girarLinhaDireita(cube,0);
+		girarColunaCima(cube,2);
+		
 
 	}else if(eDaCor(cube->faces[5][3],"br")){
 		
-		girarColunaCima(cube,0);
+		girarLinhaEsquerda(cube,0);
+		girarLinhaEsquerda(cube,0);
+		girarColunaCima(cube,2);
+		girarColunaCima(cube,2);
 
 	}else if(eDaCor(cube->faces[5][5],"br")){
 		
-		girarLinhaEsquerda(cube,0);
-		girarLinhaEsquerda(cube,0);
-		girarColunaCima(cube,0);
+		girarColunaCima(cube,2);
 
 	}else if(eDaCor(cube->faces[5][7],"br")){
 		
-		girarLinhaDireita(cube,0);
-		girarColunaCima(cube,0);
+		girarLinhaEsquerda(cube,0);
+		girarColunaCima(cube,2);
 
 	}
 
